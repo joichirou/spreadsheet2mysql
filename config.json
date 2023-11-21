@@ -1,0 +1,26 @@
+{
+    "LOG_FILE": "log.txt",
+    "DB_HOST": "localhost",
+    "DEBUG_MODE": false,
+    "INSERT_MODE": false,
+    "DB_NAME": "test_db",
+    "table": {
+        "name": "test_table",
+        "engine": "InnoDB",
+        "primary_key": "id",
+        "columns": [
+            {"name": "id", "type": "int(11)", "null": false, "default": "", "option": "AUTO_INCREMENT"},
+            {"name": "name", "type": "varchar(255)", "null": true, "default": "NULL"},
+            {"name": "email", "type": "TEXT", "null": true, "default": "NULL"},
+            {"name": "created", "type": "DATETIME", "null": true, "default": "NULL"}
+        ]
+    },
+    "spreadsheet": {
+        "id": "SpreadSheetのシートIDを記入",
+        "name": "テスト",
+        "pair": [
+            {"idx": "0", "col": "name"},
+            {"idx": "1", "col": "email"},
+        ]
+    }
+}
